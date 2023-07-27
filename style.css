@@ -4,9 +4,9 @@
 }
 
 body {
-  text-shadow: var(--shadow);
   font-size: 1.2rem;
   font-family: "Rubik", sans-serif;
+  height: 4000px;
 }
 
 .hero::before {
@@ -24,8 +24,9 @@ body {
 }
 
 .hero {
+  text-shadow: var(--shadow);
   position: relative;
-  min-height: 100vh;
+  max-height: 100vh;
 }
 
 .hero h1 {
@@ -53,6 +54,58 @@ body {
 .hero a:hover {
   background-color: var(--blue);
   color: white;
+}
+
+/* navbar */
+.myNavbar {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(3px);
+}
+
+.myNavbar .offcanvas {
+  height: 100vh;
+}
+
+.myNavbar .navbar-brand,
+.myNavbar .offcanvas-title {
+  font-family: "Great Vibes", cursive;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.myNavbar .nav-link {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* home */
+.home {
+  background-image: url(img/floral\ pattern.png);
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: -6rem;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.home h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 5rem;
+  color: var(--blue);
+  text-shadow: var(--shadow);
+  font-weight: bold;
+}
+
+.home h4 {
+  font-size: 1.5rem;
+  color: rgb(141, 139, 139);
+  margin-bottom: 1rem;
+}
+
+.home p {
+  font-size: 1rem;
+  color: rgb(78, 78, 78);
+  padding: 0 3rem;
 }
 
 /* media query */
