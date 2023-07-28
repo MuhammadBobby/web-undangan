@@ -232,6 +232,7 @@ body {
 @media (max-width: 768px) {
   html {
     font-size: 70%;
+    overflow-x: hidden;
   }
 
   .simply-countdown > .simply-section {
@@ -244,6 +245,7 @@ body {
 @media (max-width: 576px) {
   html {
     font-size: 60%;
+    overflow-x: hidden;
   }
 
   .simply-countdown > .simply-section {
