@@ -7,6 +7,7 @@ body {
   font-size: 1.2rem;
   font-family: "Rubik", sans-serif;
   height: 4000px;
+  overflow-x: hidden;
 }
 
 .hero::before {
@@ -88,7 +89,8 @@ body {
   padding-bottom: 5rem;
 }
 
-.home h2 {
+.home h2,
+.details h2 {
   font-family: "Great Vibes", cursive;
   font-size: 5rem;
   color: var(--blue);
@@ -108,7 +110,108 @@ body {
   padding: 0 3rem;
 }
 
+.home .couple {
+  margin-top: 100px;
+}
+
+.couple h3 {
+  font-family: "Great Vibes", cursive;
+  color: var(--blue);
+  font-weight: bold;
+  font-size: 3rem;
+  text-shadow: var(--shadow);
+}
+
+.couple .profil {
+  font-size: 0.8rem;
+  color: rgb(141, 139, 139);
+}
+
+.couple p {
+  font-size: 0.95rem;
+  color: rgb(78, 78, 78);
+}
+
+.couple .heart {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-40%) translateY(75px);
+}
+
+.couple .heart i {
+  margin: auto;
+  color: var(--blue);
+}
+
+.row img {
+  width: 210px;
+  height: 210px;
+}
+
+/* details */
+.details {
+  background-color: black;
+  padding-top: 8rem;
+  padding-bottom: 3rem;
+  color: white;
+}
+
+.details p {
+  font-size: 1.3rem;
+}
+
+.details a {
+  display: block;
+  width: 150px;
+  margin: 5px auto;
+}
+
+.details span {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.details .card {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.377);
+  color: white !important;
+}
+
+.details .card-header {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+}
+
+.details .card-footer {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.details .card-header,
+.details .card-body {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.377);
+}
+
 /* media query */
+
+/* xl */
+@media (max-width: 1200px) {
+  .row img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .couple .heart {
+    transform: translateX(-40%) translateY(55px);
+  }
+}
 
 /* laptop */
 @media (max-width: 992px) {
@@ -119,6 +222,10 @@ body {
   .simply-countdown > .simply-section {
     padding: 45px;
     margin: 8px;
+  }
+
+  .couple .heart {
+    display: none;
   }
 }
 /* tablet */
@@ -142,5 +249,10 @@ body {
   .simply-countdown > .simply-section {
     padding: 30px;
     margin: 3px;
+  }
+
+  .row img {
+    width: 130px;
+    height: 130px;
   }
 }
