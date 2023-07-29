@@ -199,6 +199,13 @@ body {
   border-bottom: 2px solid rgba(255, 255, 255, 0.377);
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 /* media query */
 
 /* xl */
