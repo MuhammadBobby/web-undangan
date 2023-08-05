@@ -90,7 +90,8 @@ body {
 }
 
 .home h2,
-.details h2 {
+.details h2,
+.story h2 {
   font-family: "Great Vibes", cursive;
   font-size: 5rem;
   color: var(--blue);
@@ -189,7 +190,8 @@ body {
   letter-spacing: 3px;
 }
 
-.details .card-footer {
+.details .card-footer,
+.story .container p {
   font-size: 0.8rem;
   font-weight: 300;
 }
@@ -206,8 +208,97 @@ body {
   right: 0;
 }
 
-/* media query */
+/* story */
+.story {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
 
+.story .container span {
+  text-transform: uppercase;
+  color: rgb(78, 78, 78);
+  font-size: 0.8rem;
+  display: block;
+  padding-bottom: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.timeline {
+  list-style: none;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  width: 2px;
+  background-color: rgb(141, 139, 139);
+  left: 50%;
+}
+
+.timeline li {
+  padding-bottom: 1.5rem;
+  position: relative;
+  color: white;
+}
+
+.timeline li .timeline-panel h3 {
+  color: var(--blue);
+}
+
+.timeline li .timeline-panel span {
+  color: rgb(189, 186, 186);
+}
+
+.timeline li::before,
+.timeline li::after {
+  content: "";
+  display: table;
+}
+
+.timeline li::after {
+  clear: both;
+}
+
+.timeline li .timeline-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgb(141, 139, 139);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.timeline li .timeline-body {
+  float: left;
+  width: 40%;
+  background-color: rgb(122, 121, 121);
+  padding: 2rem;
+  border-radius: 20px;
+  position: relative;
+}
+
+.timeline li .timeline-body::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: rgb(122, 121, 121);
+  position: absolute;
+  right: -13px;
+  top: 60px;
+  transform: rotate(45deg);
+}
+
+/* media query */
 /* xl */
 @media (max-width: 1200px) {
   .row img {
