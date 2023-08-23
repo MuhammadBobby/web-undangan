@@ -6,7 +6,7 @@
 body {
   font-size: 1.2rem;
   font-family: "Rubik", sans-serif;
-  height: 4000px;
+  height: 8000px;
   overflow-x: hidden;
 }
 
@@ -91,7 +91,8 @@ body {
 
 .home h2,
 .details h2,
-.story h2 {
+.story h2,
+.gallery h2 {
   font-family: "Great Vibes", cursive;
   font-size: 5rem;
   color: var(--blue);
@@ -105,7 +106,8 @@ body {
   margin-bottom: 1rem;
 }
 
-.home p {
+.home p,
+.gallery p {
   font-size: 1rem;
   color: rgb(78, 78, 78);
   padding: 0 3rem;
@@ -209,12 +211,14 @@ body {
 }
 
 /* story */
-.story {
+.story,
+.gallery {
   padding-top: 8rem;
   padding-bottom: 5rem;
 }
 
-.story .container span {
+.story .container span,
+.gallery span {
   text-transform: uppercase;
   color: rgb(78, 78, 78);
   font-size: 0.8rem;
@@ -298,8 +302,28 @@ body {
   transform: rotate(45deg);
 }
 
+.timeline li.timeline-inverted .timeline-body {
+  float: right;
+}
+
+.timeline li.timeline-inverted .timeline-body::before {
+  left: -13px;
+}
+
+/* gallery */
+.gallery {
+  background-color: rgb(122, 121, 121);
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.gallery span,
+.gallery p {
+  color: white;
+}
+
 /* media query */
-/* xl */
+/* laptop */
 @media (max-width: 1200px) {
   .row img {
     width: 160px;
@@ -309,9 +333,18 @@ body {
   .couple .heart {
     transform: translateX(-40%) translateY(55px);
   }
+
+  .timeline li .timeline-body {
+    width: 38%;
+  }
+
+  .timeline li .timeline-body::before,
+  .timeline li.timeline-inverted .timeline-body::before {
+    top: 50px;
+  }
 }
 
-/* laptop */
+/* xl */
 @media (max-width: 992px) {
   html {
     font-size: 80%;
@@ -325,7 +358,23 @@ body {
   .couple .heart {
     display: none;
   }
+
+  .timeline li .timeline-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .timeline li .timeline-body {
+    width: 36%;
+    font-size: 0.8rem;
+  }
+
+  .timeline li .timeline-body::before,
+  .timeline li.timeline-inverted .timeline-body::before {
+    top: 50px;
+  }
 }
+
 /* tablet */
 @media (max-width: 768px) {
   html {
@@ -336,6 +385,20 @@ body {
   .simply-countdown > .simply-section {
     padding: 35px;
     margin: 5px;
+  }
+
+  .timeline li .timeline-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .timeline li .timeline-body {
+    width: 35%;
+  }
+
+  .timeline li .timeline-body::before,
+  .timeline li.timeline-inverted .timeline-body::before {
+    top: 37px;
   }
 }
 
@@ -354,5 +417,31 @@ body {
   .row img {
     width: 130px;
     height: 130px;
+  }
+
+  .timeline::before {
+    left: 45px;
+  }
+
+  .timeline li .timeline-image {
+    width: 90px;
+    height: 90px;
+    left: 30px;
+  }
+
+  .timeline li .timeline-body::before,
+  .timeline li.timeline-inverted .timeline-body::before {
+    left: -13px;
+    top: 30px;
+    left: -10px;
+    z-index: -1;
+  }
+
+  .timeline li.timeline-inverted .timeline-body,
+  .timeline li .timeline-body {
+    float: left;
+    width: 70%;
+    left: 100px;
+    font-size: 1.2rem;
   }
 }
