@@ -92,7 +92,8 @@ body {
 .home h2,
 .details h2,
 .story h2,
-.gallery h2 {
+.gallery h2,
+.rsvp h2 {
   font-family: "Great Vibes", cursive;
   font-size: 5rem;
   color: var(--blue);
@@ -107,7 +108,8 @@ body {
 }
 
 .home p,
-.gallery p {
+.gallery p,
+.rsvp p {
   font-size: 1rem;
   color: rgb(78, 78, 78);
   padding: 0 3rem;
@@ -212,7 +214,8 @@ body {
 
 /* story */
 .story,
-.gallery {
+.gallery,
+.rsvp {
   padding-top: 8rem;
   padding-bottom: 5rem;
 }
@@ -319,6 +322,16 @@ body {
 
 .gallery span,
 .gallery p {
+  color: white;
+}
+
+/* RSVP */
+.rsvp {
+  background-color: black;
+}
+
+.rsvp p,
+.rsvp label {
   color: white;
 }
 
