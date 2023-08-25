@@ -31,7 +31,7 @@
         <h1 data-aos="zoom-in" data-aos-duration="2000">Bubuu & Yayaa</h1>
         <p>Akan melangsungkan resepsi pada :</p>
         <div class="simply-countdown"></div>
-        <a href="#home" class="btn btn-lg mt-4" data-aos="fade-down" data-aos-duration="1300" onclick="enableScroll()">Lihat Undangan</a>
+        <a href="#home" id="undangan" class="btn btn-lg mt-4" data-aos="fade-down" data-aos-duration="1300" onclick="enableScroll()">Lihat Undangan</a>
       </main>
     </section>
 
@@ -116,9 +116,9 @@
 
     <!-- details -->
     <section id="details" class="details">
-      <div class="row justify-content-center">
+      <div class="row justify-content-center" data-aos="fade-up">
         <div class="col-md-8 col-10 text-center">
-          <h2>Detail Acara</h2>
+          <h2 data-aos-delay="500">Detail Acara</h2>
           <p>
             Alamat : REGALE International Convention Centre <br />
             Jl. H. Adam Malik No.66-68, Silalas, Kec. Medan Bar., Kota Medan
@@ -173,9 +173,9 @@
     <section id="story" class="story">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-md-8 col-10 text-center">
+          <div class="col-md-8 col-10 text-center" data-aos="fade-up" data-aos-duration="2000">
             <span>Perjalanan Cinta Kami</span>
-            <h2>Cerita Kami</h2>
+            <h2 data-aos="fade-up" data-aos-delay="500">Cerita Kami</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam impedit aut nesciunt tempora nobis asperiores eius rerum.</p>
           </div>
         </div>
@@ -188,7 +188,7 @@
                   <div class="timeline-image" style="background-image: url(img/timeline1.jpeg)"></div>
                 </div>
 
-                <div class="timeline-body">
+                <div class="timeline-body" data-aos="fade-up">
                   <div class="timeline-panel">
                     <h3>Pertama Berkenalan</h3>
                     <span>Oktober 2022</span>
@@ -202,7 +202,7 @@
                   <div class="timeline-image" style="background-image: url(img/timeline2.jpg)"></div>
                 </div>
 
-                <div class="timeline-body">
+                <div class="timeline-body" data-aos="fade-up" data-aos-delay="500">
                   <div class="timeline-panel">
                     <h3>Jadian Pacaran</h3>
                     <span>Februari 2023</span>
@@ -216,7 +216,7 @@
                   <div class="timeline-image" style="background-image: url(img/timeline3.jpg)"></div>
                 </div>
 
-                <div class="timeline-body">
+                <div class="timeline-body" data-aos="fade-up" data-aos-delay="1000">
                   <div class="timeline-panel">
                     <h3>Date Pertama</h3>
                     <span>Maret 2022</span>
@@ -234,49 +234,55 @@
     <section id="gallery" class="gallery">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-md-8 col-10 text-center">
+          <div class="col-md-8 col-10 text-center" data-aos="fade-up">
             <span>Perjalanan Cinta Kami</span>
-            <h2>Cerita Kami</h2>
+            <h2 data-aos="fade-up" data-aos-delay="500">Cerita Kami</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam impedit aut nesciunt tempora nobis asperiores eius rerum.</p>
           </div>
         </div>
 
         <div class="row row-cols-lg-4 row-cols-md-3 row-cols-2">
-          <div class="col mt-3">
+          <div class="col mt-3" data-aos="zoom-in">
             <a href="img/g1.jpg" data-toggle="lightbox" data-caption="Date Mall" data-gallery="mygallery">
               <img src="img/thumbnails/g1.jpg" alt="foto 1" class="img-fluid w-100 rounded" />
             </a>
           </div>
 
-          <div class="col mt-3">
+          <div class="col mt-3" data-aos="zoom-in" data-aos-delay="200">
             <a href="img/g2.jpg" data-toggle="lightbox" data-caption="LDR Lebaran" data-gallery="mygallery">
               <img src="img/thumbnails/g2.jpg" alt="foto 1" class="img-fluid w-100 rounded" />
             </a>
           </div>
 
-          <div class="col mt-3">
+          <div class="col mt-3" data-aos="zoom-in" data-aos-delay="400">
             <a href="img/g3.jpg" data-toggle="lightbox" data-caption="Ban Bocor Gais" data-gallery="mygallery">
               <img src="img/thumbnails/g3.jpg" alt="foto 1" class="img-fluid w-100 rounded" />
             </a>
           </div>
 
-          <div class="col mt-3">
+          <div class="col mt-3" data-aos="zoom-in" data-aos-delay="600">
             <a href="img/g4.jpg" data-toggle="lightbox" data-caption="Batik couple" data-gallery="mygallery">
               <img src="img/thumbnails/g4.jpg" alt="foto 1" class="img-fluid w-100 rounded" />
             </a>
           </div>
 
-          <div class="col mt-3">
+          <div class="col mt-3" data-aos="zoom-in" data-aos-delay="800">
             <a href="img/g5.jpg" data-toggle="lightbox" data-caption="Prodi Couple" data-gallery="mygallery">
               <img src="img/thumbnails/g5.jpg" alt="foto 1" class="img-fluid w-100 rounded" />
             </a>
           </div>
 
-          <div class="col mt-3">
+          <div class="col mt-3" data-aos="zoom-in" data-aos-delay="1000">
+            <a href="img/g6.jpg" data-toggle="lightbox" data-caption="Belajar Bareng" data-gallery="mygallery">
+              <img src="img/thumbnails/g6.jpg" alt="foto 1" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+
+          <!-- <div class="col mt-3">
             <a href="https://picsum.photos/id/129/1200/800" data-toggle="lightbox" data-caption="This describes the image" data-gallery="mygallery">
               <img src="https://picsum.photos/id/129/300/400" alt="foto 1" class="img-fluid w-100 rounded" />
             </a>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -286,7 +292,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
-            <h2>Konfirmasi Kehadiran</h2>
+            <h2 data-aos="fade-up">Konfirmasi Kehadiran</h2>
             <p>Mohon isi form berikut untuk mengonfirmasi kehadiran anda.</p>
           </div>
         </div>
@@ -321,28 +327,28 @@
     <!-- Gifts -->
     <section id="gifts" class="gifts">
       <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" data-aos="fade-up">
           <div class="col-md-8 col-10 text-center">
-            <span>sebagai tanda kasih</span>
-            <h2>Kirim Hadiah</h2>
-            <p>Sebagai tanda kasih untuk kedua mempelai, anda dipersilahkan jika ingin memberikan hadiah terbaik anda untuk mereka berdua.</p>
+            <span data-aos-delay="100">sebagai tanda kasih</span>
+            <h2 data-aos="fade-up" data-aos-delay="500">Kirim Hadiah</h2>
+            <p data-aos-delay="200">Sebagai tanda kasih untuk kedua mempelai, anda dipersilahkan jika ingin memberikan hadiah terbaik anda untuk mereka berdua.</p>
           </div>
         </div>
 
         <div class="row justify-content-center text-center">
           <div class="col-md-6">
             <ul class="list-group justify-content-center">
-              <li class="list-group-item">
+              <li class="list-group-item" data-aos="fade-right">
                 <div class="fw-bold">BNI</div>
                 1128094272-MUHAMMAD BOBBY OKTAVIANO
               </li>
 
-              <li class="list-group-item">
+              <li class="list-group-item" data-aos="fade-left" data-aos-delay="200">
                 <div class="fw-bold">BANK NEO COMMERCE</div>
                 123456780075543-MUHAMMAD BOBBY OKTAVIANO
               </li>
 
-              <li class="list-group-item">
+              <li class="list-group-item" data-aos="zoom-in-up" data-aos-delay="400">
                 <div class="fw-bold">DANA</div>
                 <img src="img/tfdana.jpg" alt="QR Dana" />
               </li>
@@ -382,6 +388,10 @@
       </div>
     </footer>
 
+    <!-- backsound -->
+    <!-- <video id="video" src="backsound/janji suci.mp4" width="0" height="0" autoplay></video> -->
+    <audio id="audio" src="backsound/janji suci.mp3"></audio>
+
     <!-- script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
@@ -410,7 +420,7 @@
     <script>
       AOS.init({
         once: true,
-        duration: 1000,
+        duration: 2000,
       });
     </script>
 

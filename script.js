@@ -1,8 +1,10 @@
 const nav = document.querySelector(".navbar");
+const audio = document.getElementById("audio");
 
 const offset = nav.offsetTop;
 
 window.addEventListener("scroll", function () {
+  audio.play();
   if (window.scrollY >= offset) {
     nav.classList.add("sticky");
   } else {
@@ -25,3 +27,11 @@ window.addEventListener("load", function () {
     });
   });
 });
+
+// // backsound
+// const audio = document.getElementById("audio");
+// const undangan = document.getElementById("undangan");
+
+// undangan.addEventListener("click", function () {
+
+// });

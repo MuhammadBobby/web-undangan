@@ -6,8 +6,9 @@
 body {
   font-size: 1.2rem;
   font-family: "Rubik", sans-serif;
-  height: 8000;
+  height: 5500px;
   overflow-x: hidden;
+  overflow-y: visible;
 }
 
 .hero::before {
@@ -25,6 +26,7 @@ body {
 }
 
 .hero {
+  display: inline-block;
   text-shadow: var(--shadow);
   position: relative;
   max-height: 100vh;
@@ -376,6 +378,10 @@ footer li {
   margin: 0.5rem;
 }
 
+audio {
+  display: none;
+}
+
 /* media query */
 /* laptop */
 @media (max-width: 1200px) {
@@ -402,6 +408,10 @@ footer li {
 @media (max-width: 992px) {
   html {
     font-size: 80%;
+  }
+
+  body {
+    height: 5100px;
   }
 
   .simply-countdown > .simply-section {
@@ -436,6 +446,10 @@ footer li {
     overflow-x: hidden;
   }
 
+  body {
+    height: 5120px;
+  }
+
   .simply-countdown > .simply-section {
     padding: 35px;
     margin: 5px;
@@ -461,6 +475,10 @@ footer li {
   html {
     font-size: 60%;
     overflow-x: hidden;
+  }
+
+  body {
+    height: 4385px;
   }
 
   .simply-countdown > .simply-section {
